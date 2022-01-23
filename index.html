@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Jan 23 2022 02:15:04 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Jan 23 2022 22:50:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="618c7db83755f5e7836f72ee" data-wf-site="618c7db83755f528e66f72ed">
 <head>
   <meta charset="utf-8">
@@ -336,8 +336,138 @@
       </div>
     </div>
   </div>
+  <div data-w-id="ea0219d0-d60c-0c76-bd17-afd6fe8f690b" class="section-2 wf-section">
+    <div data-w-id="ea0219d0-d60c-0c76-bd17-afd6fe8f690c" class="chat-button">
+      <div class="prompt-message">
+        <div>Hey! Wanna chat? 🙃</div>
+      </div>
+      <div data-w-id="ea0219d0-d60c-0c76-bd17-afd6fe8f6910" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/61e8daa4b8eeeb24f4051bb8/61e8daa4b8eeeb58ba051bc7_lottieflow-chat-17-5-ffffff-easey.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0" class="lottie-animation"></div>
+      <div></div>
+    </div>
+    <div class="chat-wrapper">
+      <div class="chat-top">
+        <div class="text-block-17">arachnode.exe</div>
+        <div class="text-block-18">- Online</div>
+      </div>
+      <div class="input-wrapper">
+        <div class="form-block w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2">
+            <div class="div-block-12"></div>
+            <div class="chat-bubble-wrapper">
+              <div data-w-id="ea0219d0-d60c-0c76-bd17-afd6fe8f691d" class="chat-bubble">
+                <div>Hey there!👋🏾</div>
+                <div class="div-block-17"></div>
+              </div>
+              <div data-w-id="ea0219d0-d60c-0c76-bd17-afd6fe8f6920" class="chat-bubble">
+                <div>What is your name?</div>
+              </div>
+              <div class="chat-bubble reply reply--name">
+                <div class="response--name">Name</div>
+              </div>
+              <div class="chat-bubble response--1">
+                <div class="text--name">Hey, Vimalan. How can we help you today?</div>
+              </div>
+              <div class="chat-bubble response--2"><label class="radio-button-field w-radio">
+                  <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio--button w-radio-input"></div><input type="radio" data-name="service" id="Web design" name="service" value="Web design" service="web-design" style="opacity:0;position:absolute;z-index:-1"><span for="Web design" class="rbl w-form-label">Web Design</span>
+                </label><label class="radio-button-field w-radio">
+                  <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio--button w-radio-input"></div><input type="radio" data-name="service" id="Webflow" name="service" value="Webflow" service="webflow" style="opacity:0;position:absolute;z-index:-1"><span for="Webflow" class="rbl w-form-label">Webflow</span>
+                </label><label id="w-node-ea0219d0-d60c-0c76-bd17-afd6fe8f6932-fe8f690b" class="radio-button-field w-radio">
+                  <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio--button w-radio-input"></div><input type="radio" data-name="service" id="Design + Dev" name="service" value="Design + Dev" service="both" style="opacity:0;position:absolute;z-index:-1"><span for="Design + Dev" class="rbl w-form-label">Design + Dev</span>
+                </label></div>
+              <div id="service" class="chat-bubble reply reply--service">
+                <div class="response--name">Web Design</div>
+              </div>
+              <div class="chat-bubble response--3">
+                <div>Web Design! Sure we can help you with that. </div>
+              </div>
+              <div class="chat-bubble response--4">
+                <div>How do we contact you?</div>
+              </div>
+              <div class="chat-bubble reply reply--email">
+                <div class="response--name">--</div>
+              </div><input type="submit" value="Submit" data-wait="Please wait..." class="submit w-button">
+            </div>
+            <div class="field-wrapper"><input type="text" class="field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Type here" id="name" required=""><input type="email" class="field email w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email" id="email" required=""><input type="text" class="field hidden w-input" maxlength="256" name="hidden-3" data-name="Hidden 3" placeholder="Type here" id="hidden-3" required="">
+              <div class="field dummy"></div>
+            </div>
+          </form>
+          <div class="success w-form-done">
+            <div class="success-icon">🎉</div>
+            <div class="success-message">Message goes here!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=618c7db83755f528e66f72ed" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+//get name from name field
+var name;
+var service;
+var email;
+//when enter is detected in name field input
+//using jQuery to pull ID
+$("#name").keypress(function(e) {
+//which == 13 is the keycode for the enter button
+    if(e.which == 13) {
+    		name = $('#name').val();
+       $('.reply--name').text(name); //sets text span equal to name variable
+       $('#name').hide(); //clears the field
+       setTimeout(function(){ 
+         $('.reply--name').show(); 
+       }, 500);
+        var q1= "Hey "+name+"! How can we help you today?"; // question 1
+        $('.response--1').text(q1); //adds q1 to text field
+        setTimeout(function(){ 
+        $('.response--1').show(); //unhides text field
+        }, 2000);
+        setTimeout(function(){ 
+        $('.response--2').show(); //unhides text field
+       }, 3000); 
+   }
+});
+//get radio field input
+$('input[name="service"]').on('change', function(e) {
+     $('.reply--service').hide(); // why are these hiden here when they are default hidden? and havn't been shown yet
+     $('.response--3').hide(); // if anything response 2 should be hidden/disdsabled to stop perple from going back and choosing another option
+    service = e.target.value;
+    $('.reply--service').text(service); //adds q1 to text field
+  	setTimeout(function(){ 
+     $('.reply--service').show(); 
+   }, 500);
+   var response2= service+"! Sure we can help you with that."; // service text
+   $('.response--3').text(response2); 
+	setTimeout(function(){ 
+     $('.response--3').show(); 
+  }, 1000);
+  setTimeout(function(){ 
+     $('.response--4').show(); //show email text
+     $('#email').show(); //show email field
+  }, 1500);
+});
+//detected enter on email field
+$("#email").keypress(function(e) {
+    if(e.which == 13) {
+ 		email = $('#email').val();
+    $('#email').hide();
+    $('.reply--email').text(email); 
+  	setTimeout(function(){ 
+     $('.reply--email').show(); 
+   }, 1000);
+   var response3= "Awesome! Thanks "+name+"! We will get back to you ASAP! :)"; // service text
+   $('.response--5').text(response3); 
+    $('.success-message').text(response3);
+    setTimeout(function(){ 
+     $('.hidden').val("teeTt")
+     $('.submit').trigger('click'); 
+  	}, 1500);
+   }
+});
+</script>
 </body>
 </html>
